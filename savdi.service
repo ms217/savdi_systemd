@@ -5,8 +5,8 @@ Wants=amavisd.service
 
 [Service]
 Type=forking
-User=savdi
-Group=savdi
+User=amavis
+Group=amavis
 PIDFile=/var/run/sophos/savdi.pid
 ExecStart=/usr/local/bin/savdid -d -c /usr/local/savdi/savdid.conf
 ExecReload=/bin/kill -HUP $MAINPID
